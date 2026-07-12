@@ -84,6 +84,7 @@
                         <option value="other_faculty">Other (type below)</option>
                     </select>
                 </div>
+
                 <div class="fld custom-hidden" id="customFacultyBox">
                     <label>Specify Faculty Name</label>
                     <input type="text" id="customFaculty" placeholder="e.g. Faculty of Engineering">
