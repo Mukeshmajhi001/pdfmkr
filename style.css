@@ -83,25 +83,26 @@ header {
   position: relative;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
+
 header::after {
   content: "";
   display: block;
   height: 3px;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    var(--gold) 20%,
-    var(--gold) 80%,
-    transparent 100%
-  );
+  background: linear-gradient(90deg,
+      transparent 0%,
+      var(--gold) 20%,
+      var(--gold) 80%,
+      transparent 100%);
   margin-top: 14px;
 }
+
 header h1 {
   font-family: "Libre Baskerville", serif;
   font-size: 1.75rem;
   font-weight: 700;
   letter-spacing: 0.04em;
 }
+
 header p {
   font-size: 0.88rem;
   opacity: 0.78;
@@ -115,6 +116,7 @@ header p {
   top: 50%;
   transform: translateY(-50%);
 }
+
 .theme-btn {
   background: rgba(255, 255, 255, 0.15);
   border: 2px solid rgba(255, 255, 255, 0.3);
@@ -129,10 +131,12 @@ header p {
   align-items: center;
   gap: 6px;
 }
+
 .theme-btn:hover {
   background: rgba(255, 255, 255, 0.25);
   transform: scale(1.05);
 }
+
 .theme-label {
   font-size: 0.75rem;
   font-weight: 600;
@@ -164,6 +168,7 @@ header p {
   margin: 32px 0 20px;
   position: relative;
 }
+
 .sec::after {
   content: "";
   position: absolute;
@@ -173,6 +178,7 @@ header p {
   height: 1.5px;
   background: linear-gradient(90deg, var(--gold), transparent);
 }
+
 .sec:first-of-type {
   margin-top: 0;
 }
@@ -182,6 +188,7 @@ header p {
   display: grid;
   gap: 18px;
 }
+
 .col2 {
   grid-template-columns: 1fr 1fr;
   gap: 16px;
@@ -193,6 +200,7 @@ header p {
   flex-direction: column;
   gap: 7px;
 }
+
 label {
   font-size: 0.7rem;
   font-weight: 700;
@@ -221,16 +229,19 @@ select {
   -webkit-appearance: none;
   appearance: none;
 }
+
 input:focus,
 select:focus {
   box-shadow:
     var(--neu-pressed),
     0 0 0 2px var(--accent);
 }
+
 input::placeholder {
   color: var(--text-muted);
   opacity: 0.6;
 }
+
 select {
   cursor: pointer;
 }
@@ -241,9 +252,11 @@ select {
   flex-wrap: wrap;
   gap: 12px;
 }
+
 .radios input[type="radio"] {
   display: none;
 }
+
 .radios label {
   display: block;
   padding: 10px 20px;
@@ -259,12 +272,14 @@ select {
   box-shadow: var(--neu-flat);
   transition: all 0.2s;
 }
-.radios input[type="radio"]:checked + label {
+
+.radios input[type="radio"]:checked+label {
   background: var(--accent);
   color: #fff;
   box-shadow: var(--neu-pressed);
   font-weight: 700;
 }
+
 .radios label:hover:not(:has(input:checked)) {
   box-shadow:
     3px 3px 6px var(--shadow-dark),
@@ -278,12 +293,10 @@ select {
 /* ===== DIVIDER ===== */
 .hr {
   height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--shadow-dark),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      var(--shadow-dark),
+      transparent);
   margin: 24px 0;
   opacity: 0.5;
 }
@@ -309,6 +322,7 @@ select {
     transform 0.12s,
     color 0.3s;
 }
+
 .btn:hover {
   box-shadow:
     10px 10px 20px var(--shadow-dark),
@@ -316,6 +330,7 @@ select {
   color: var(--gold);
   transform: translateY(-2px);
 }
+
 .btn:active {
   box-shadow: var(--neu-pressed);
   transform: translateY(1px);
@@ -341,6 +356,7 @@ select {
   font-size: 0.95rem;
   font-weight: 600;
 }
+
 .toast.show {
   display: block;
 }
@@ -349,12 +365,15 @@ select {
   .card {
     padding: 22px 18px;
   }
+
   .col2 {
     grid-template-columns: 1fr;
   }
+
   header h1 {
     font-size: 1.3rem;
   }
+
   .toggle-wrap {
     position: static;
     transform: none;
@@ -362,6 +381,7 @@ select {
     display: flex;
     justify-content: center;
   }
+
   header {
     padding-bottom: 14px;
   }
